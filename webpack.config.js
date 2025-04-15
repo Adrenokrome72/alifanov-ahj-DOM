@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -23,11 +23,14 @@ export default {
       },
       {
         test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader'
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
           },
         },
+      },
     ],
   },
   devServer: {
@@ -41,6 +44,10 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+      },
     }),
   ],
   resolve: {
