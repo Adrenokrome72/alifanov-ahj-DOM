@@ -4,6 +4,8 @@
 
 ## Статус сборки
 
+[![Статус сборки](https://github.com/Adrenokrome72/alifanov-ahj-DOM/actions/workflows/deploy.yml/badge.svg)](https://github.com/Adrenokrome72/alifanov-ahj-DOM/actions)
+
 ## Описание
 
 Этот проект представляет собой заготовку игры, в которой изображение гоблина случайным образом перемещается между ячейками сетки 4x4 каждые 1000 мс. Используется Webpack для сборки, ESLint для проверки кода, Jest для тестирования и GitHub Actions для деплоя на GitHub Pages.
