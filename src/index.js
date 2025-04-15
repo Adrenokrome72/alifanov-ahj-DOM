@@ -1,7 +1,7 @@
 import goblinImage from './assets/goblin.png';
 
 const grid = document.getElementById('grid');
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 16; i += 1) {
   const cell = document.createElement('div');
   cell.className = 'cell';
   grid.appendChild(cell);

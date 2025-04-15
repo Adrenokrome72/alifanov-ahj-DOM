@@ -1,1 +1,13 @@
-node_modules
+# Зависимости
+node_modules/
+
+# Скомпилированные файлы
+dist/
+
+# Логи и кэш
+*.log
+.npm/
+.cache/
+
+# Файлы редакторов
+.vscode/

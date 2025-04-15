@@ -21,6 +21,13 @@ export default {
           filename: 'assets/[name][ext]',
         },
       },
+      {
+        test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader'
+          },
+        },
     ],
   },
   devServer: {
