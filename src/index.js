@@ -1,4 +1,5 @@
 import goblinImage from './assets/goblin.png';
+import './styles.css';
 
 const grid = document.getElementById('grid');
 for (let i = 0; i < 16; i += 1) {

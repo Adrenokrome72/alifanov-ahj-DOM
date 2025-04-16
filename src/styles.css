@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 125px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 125px;
+    height: 125px;
+    border: 1px solid black;
+    background-size: cover;
+  }
